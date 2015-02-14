@@ -1,6 +1,0 @@
----
-show-prefix: true
-show-message-onteleport: true
-teleport-message: '&4Teleported to last point'
-save-position-onleave: false
-...
