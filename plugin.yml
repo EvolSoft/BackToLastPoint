@@ -1,0 +1,33 @@
+name: BackToLastPoint
+main: BackToLastPoint\Main
+version: "1.0"
+api: [1.11.0]
+load: STARTUP
+author: EvolSoft
+description: Return back to last point
+website: http://www.evolsoft.tk
+
+commands:
+ backtolastpoint:
+  aliases: [btlp]
+  description: BackToLastPoint Commands.
+  permission: backtolastpoint
+ lastpoint:
+  aliases: [back]
+  description: Teleport to last point.
+  permission: backtolastpoint.lastpoint
+  
+permissions:
+ backtolastpoint:
+  default: op
+  description: BackToLastPoint commands permissions.
+  children:
+   backtolastpoint.info:
+    default: op
+    description: BackToLastPoint command Info permission.
+   backtolastpoint.reload:
+    default: op
+    description: BackToLastPoint command Reload permission.
+   backtolastpoint.lastpoint:
+    default: true
+    description: BackToLastPoint command LastPoint permission.
